@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Myuser extends Model
+class Myuser extends Authenticatable
 {
     use HasFactory;
-     protected $fillable =['name','email','location'];
+     protected $fillable =['name','email','password','location'];
 }

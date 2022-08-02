@@ -1,4 +1,4 @@
-@include('gigsboard.header')
+
 
 	<body>
 	    <form method="POST" action="{{url('insert-user')}}">
@@ -12,6 +12,10 @@
 		      <div class="col-xs-4">
 		        <label for="ex2">Email</label>
 		        <input class="form-control" id="ex2" type="text" name="email" value="{{ old('email')}}" required>
+		      </div>
+		      <div class="col-xs-4">
+		        <label for="ex2">Password</label>
+		        <input class="form-control" id="ex2" type="text" name="password" value="{{ old('password')}}" required>
 		      </div>
 		      <div class="col-xs-4">
 		        <label for="ex3">Location</label>
